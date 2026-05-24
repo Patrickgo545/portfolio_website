@@ -1,8 +1,16 @@
+'use client';
+
 import { Project } from "@/lib/projects";
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({ project, onClick }: { project: Project; onClick: () => void }) {
   return (
-    <article className="border border-neutral-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+    <article
+      className="border border-neutral-200 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer focus-visible:ring-2 focus-visible:ring-neutral-400 outline-none"
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onClick(); }}
+    >
       <div className="flex items-start justify-between gap-4 mb-2">
         <h3 className="text-lg font-medium text-neutral-900">{project.title}</h3>
         <span className="text-xs text-neutral-400 whitespace-nowrap pt-0.5">{project.role}</span>
