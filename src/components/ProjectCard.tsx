@@ -8,8 +8,18 @@ export default function ProjectCard({ project }: { project: Project }) {
         <span className="text-xs text-neutral-400 whitespace-nowrap pt-0.5">{project.role}</span>
       </div>
       <p className="text-neutral-600 text-sm mb-4">{project.description}</p>
-      <div className="aspect-video bg-neutral-50 border border-dashed border-neutral-200 rounded-lg flex items-center justify-center text-neutral-300 text-sm mb-4">
-        Architecture diagram
+      <div className="aspect-video bg-neutral-50 rounded-lg overflow-hidden mb-4">
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={`${project.title} architecture diagram`}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full border border-dashed border-neutral-200 flex items-center justify-center text-neutral-300 text-sm">
+            Architecture diagram
+          </div>
+        )}
       </div>
       <div className="flex flex-wrap gap-1.5 mb-4">
         {project.stack.map((tech) => (

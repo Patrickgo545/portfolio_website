@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#a3a3a3"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#fafafa"/>
+  <text x="400" y="70" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#262626" letter-spacing="1">DISTRIBUTED MESSAGE PROCESSOR</text>
+
+  <rect x="60" y="186" width="140" height="68" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="130" y="216" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">Producers</text>
+  <text x="130" y="234" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Go Services</text>
+
+  <line x1="200" y1="220" x2="239" y2="220" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="240" y="186" width="140" height="68" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="310" y="216" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">Kafka Cluster</text>
+  <text x="310" y="234" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Message Queue</text>
+
+  <line x1="380" y1="220" x2="419" y2="220" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="420" y="186" width="140" height="68" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="490" y="216" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">gRPC Workers</text>
+  <text x="490" y="234" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Process &amp; Route</text>
+
+  <line x1="560" y1="220" x2="599" y2="220" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="600" y="186" width="140" height="68" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="670" y="216" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">K8s Pods</text>
+  <text x="670" y="234" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Kubernetes</text>
+
+  <text x="400" y="348" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#d4d4d4">Go · Kafka · gRPC · Kubernetes</text>
+</svg>

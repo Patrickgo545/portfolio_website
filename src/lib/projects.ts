@@ -4,6 +4,7 @@ export interface Project {
   stack: string[];
   role: string;
   outcome: string;
+  image?: string;
 }
 
 export const projects: Project[] = [
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     stack: ["Python", "FastAPI", "PostgreSQL", "Redis"],
     role: "Backend Lead",
     outcome: "Reduced end-to-end latency by X% under peak load.",
+    image: "/arch-alpha.svg",
   },
   {
     title: "Project Beta",
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     stack: ["Go", "Kafka", "gRPC", "Kubernetes"],
     role: "Systems Engineer",
     outcome: "Processed Xm+ events per day with 99.9% uptime.",
+    image: "/arch-beta.svg",
   },
   {
     title: "Project Gamma",
@@ -30,5 +33,6 @@ export const projects: Project[] = [
     stack: ["Python", "LLM APIs", "Vector DB", "LangChain"],
     role: "AI Engineer",
     outcome: "Improved knowledge retrieval accuracy by X% vs. keyword search.",
+    image: "/arch-gamma.svg",
   },
 ];

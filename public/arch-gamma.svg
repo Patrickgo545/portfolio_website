@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#a3a3a3"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#fafafa"/>
+  <text x="400" y="55" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#262626" letter-spacing="1">RAG KNOWLEDGE ASSISTANT</text>
+
+  <text x="75" y="112" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#c4c4c4" letter-spacing="0.5">QUERY PIPELINE</text>
+
+  <rect x="75" y="120" width="130" height="58" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="140" y="145" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">User Query</text>
+  <text x="140" y="163" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Natural Language</text>
+
+  <line x1="205" y1="149" x2="334" y2="149" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="335" y="120" width="130" height="58" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="400" y="145" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">LangChain</text>
+  <text x="400" y="163" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Orchestrator</text>
+
+  <line x1="465" y1="149" x2="594" y2="149" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="595" y="120" width="130" height="58" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="660" y="145" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">LLM API</text>
+  <text x="660" y="163" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Generate Response</text>
+
+  <line x1="400" y1="178" x2="400" y2="269" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="413" y="227" font-family="system-ui,-apple-system,sans-serif" font-size="9.5" fill="#a3a3a3">retrieve</text>
+
+  <text x="75" y="258" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#c4c4c4" letter-spacing="0.5">OFFLINE INDEXING</text>
+
+  <rect x="75" y="270" width="130" height="58" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="140" y="295" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">Doc Embedder</text>
+  <text x="140" y="313" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Chunk &amp; Embed</text>
+
+  <line x1="205" y1="299" x2="334" y2="299" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="257" y="291" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9.5" fill="#a3a3a3">index</text>
+
+  <rect x="335" y="270" width="130" height="58" rx="8" fill="white" stroke="#e5e5e5" stroke-width="1.5"/>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#262626">Vector DB</text>
+  <text x="400" y="313" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10.5" fill="#737373">Semantic Search</text>
+
+  <text x="400" y="390" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#d4d4d4">Python · LangChain · Vector DB · LLM APIs</text>
+</svg>
