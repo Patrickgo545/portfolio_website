@@ -23,15 +23,6 @@ export default function Contact() {
         <h2 className="text-2xl font-semibold text-neutral-900 mb-10">Contact</h2>
         <div className="flex flex-wrap gap-8">
           <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2.5 text-neutral-500 hover:text-neutral-900 transition-colors"
-          >
-            <GitHubIcon />
-            <span className="text-sm font-medium">GitHub</span>
-          </a>
-          <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,6 +37,15 @@ export default function Contact() {
           >
             <Mail size={20} />
             <span className="text-sm font-medium">Email</span>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2.5 text-neutral-500 hover:text-neutral-900 transition-colors"
+          >
+            <GitHubIcon />
+            <span className="text-sm font-medium">GitHub</span>
           </a>
         </div>
       </div>
