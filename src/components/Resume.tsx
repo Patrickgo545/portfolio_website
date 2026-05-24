@@ -20,8 +20,8 @@ export default function Resume() {
             onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setOpen(true); }}
           >
             <div className="flex items-start justify-between gap-4 mb-4">
-              <h3 className="text-lg font-medium text-neutral-900">Resume</h3>
-              <span className="text-xs text-neutral-400 whitespace-nowrap pt-0.5">PDF</span>
+              {/* <h3 className="text-lg font-medium text-neutral-900">Resume</h3>
+              <span className="text-xs text-neutral-400 whitespace-nowrap pt-0.5">PDF</span> */}
             </div>
 
             <div className="aspect-video bg-neutral-50 rounded-lg overflow-hidden mb-4 relative">
