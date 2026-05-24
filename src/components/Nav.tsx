@@ -7,6 +7,9 @@ export default function Nav() {
           <a href="#projects" className="hover:text-neutral-900 transition-colors">
             Projects
           </a>
+          <a href="#resume" className="hover:text-neutral-900 transition-colors">
+            Resume
+          </a>
           <a href="#about" className="hover:text-neutral-900 transition-colors">
             About
           </a>
