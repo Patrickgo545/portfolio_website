@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <section id="hero"><Hero /></section>
       <About />
       <Projects />
       <Resume />
