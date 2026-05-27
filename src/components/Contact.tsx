@@ -23,7 +23,7 @@ export default function Contact() {
         <h2 className="text-2xl font-semibold text-neutral-900 mb-10">Contact</h2>
         <div className="flex flex-wrap gap-8">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/patrick-go/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 text-neutral-500 hover:text-neutral-900 transition-colors"
@@ -32,14 +32,14 @@ export default function Contact() {
             <span className="text-sm font-medium">LinkedIn</span>
           </a>
           <a
-            href="mailto:placeholder@example.com"
+            href="mailto:patrickgo545@gmail.com"
             className="flex items-center gap-2.5 text-neutral-500 hover:text-neutral-900 transition-colors"
           >
             <Mail size={20} />
             <span className="text-sm font-medium">Email</span>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Patrickgo545"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 text-neutral-500 hover:text-neutral-900 transition-colors"

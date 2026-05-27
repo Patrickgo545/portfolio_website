@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import ResumeModal from './ResumeModal';
 
 export default function Resume() {
@@ -25,17 +26,12 @@ export default function Resume() {
             </div>
 
             <div className="aspect-video bg-neutral-50 rounded-lg overflow-hidden mb-4 relative">
-              <iframe
-                src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                className="absolute top-0 left-0 pointer-events-none select-none"
-                style={{
-                  width: '816px',
-                  height: '1056px',
-                  transform: 'scale(0.65)',
-                  transformOrigin: 'top left',
-                }}
-                title="Resume preview"
-                tabIndex={-1}
+              <Image
+                src="/resume-preview.png"
+                alt="Resume preview"
+                fill
+                className="object-cover object-top select-none pointer-events-none"
+                priority
               />
               <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-neutral-50 to-transparent pointer-events-none" />
             </div>

@@ -16,7 +16,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col animate-fade-in-up"
+        className="bg-white rounded-2xl w-[90vw] max-w-5xl h-[90vh] flex flex-col animate-fade-in-up"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-neutral-100 shrink-0">
@@ -42,7 +42,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
         <iframe
           src="/resume.pdf#toolbar=0&navpanes=0"
           className="w-full rounded-b-2xl"
-          style={{ flex: 1, minHeight: 0, height: '75vh' }}
+          style={{ flex: 1, minHeight: 0 }}
           title="Resume"
         />
       </div>
