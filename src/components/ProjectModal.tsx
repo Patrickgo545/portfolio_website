@@ -28,7 +28,6 @@ export default function ProjectModal({ project, onClose }: { project: Project; o
         <div className="p-8">
           <div className="flex items-start justify-between gap-4 mb-3">
             <h2 className="text-2xl font-semibold text-neutral-900">{project.title}</h2>
-            <span className="text-xs text-neutral-400 whitespace-nowrap pt-1.5">{project.role}</span>
           </div>
           <p className="text-neutral-600 mb-6">{project.description}</p>
           <div className="flex flex-wrap gap-1.5 mb-6">
@@ -38,7 +37,11 @@ export default function ProjectModal({ project, onClose }: { project: Project; o
               </span>
             ))}
           </div>
-          <p className="text-sm text-neutral-500">↗ {project.outcome}</p>
+          <ul className="space-y-2">
+            {project.outcome.map((o, i) => (
+              <li key={i} className="text-sm text-neutral-500">↗ {o}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

@@ -13,7 +13,6 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
     >
       <div className="flex items-start justify-between gap-4 mb-2">
         <h3 className="text-lg font-medium text-neutral-900">{project.title}</h3>
-        <span className="text-xs text-neutral-400 whitespace-nowrap pt-0.5">{project.role}</span>
       </div>
       <p className="text-neutral-600 text-sm mb-4">{project.description}</p>
       <div className="aspect-video bg-neutral-50 rounded-lg overflow-hidden mb-4">
@@ -36,7 +35,7 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
           </span>
         ))}
       </div>
-      <p className="text-sm text-neutral-500">↗ {project.outcome}</p>
+      <p className="text-sm text-neutral-500">↗ {project.outcome[0]}</p>
     </article>
   );
 }
