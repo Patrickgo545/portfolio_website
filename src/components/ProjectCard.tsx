@@ -20,7 +20,7 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
           <img
             src={project.image}
             alt={`${project.title} architecture diagram`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         ) : (
           <div className="w-full h-full border border-dashed border-neutral-200 flex items-center justify-center text-neutral-300 text-sm">
@@ -35,7 +35,7 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
           </span>
         ))}
       </div>
-      <p className="text-sm text-neutral-500">↗ {project.outcome[0]}</p>
+      <p className="text-sm text-neutral-500"></p>
     </article>
   );
 }

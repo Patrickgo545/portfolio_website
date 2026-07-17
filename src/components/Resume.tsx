@@ -8,7 +8,7 @@ export default function Resume() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section id="resume" className="py-24">
+    <section id="resume" className="py-24 bg-neutral-50">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-2xl font-semibold text-neutral-900 mb-10">Resume</h2>
 

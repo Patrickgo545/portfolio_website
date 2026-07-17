@@ -17,7 +17,7 @@ export default function ProjectModal({ project, onClose }: { project: Project; o
             <img
               src={project.image}
               alt={`${project.title} architecture diagram`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           ) : (
             <div className="w-full h-full border-b border-neutral-100 flex items-center justify-center text-neutral-300 text-sm">
